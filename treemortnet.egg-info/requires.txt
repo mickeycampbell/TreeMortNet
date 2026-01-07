@@ -1,0 +1,7 @@
+tensorflow-cpu
+numpy
+geopandas
+shapely
+rasterio
+Pillow
+tqdm
