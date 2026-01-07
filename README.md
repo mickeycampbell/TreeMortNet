@@ -7,8 +7,8 @@ The package wraps a pre-trained TensorFlow model and provides a simple, file-bas
 
 ## Requirements
 
-- Python ≥ 3.11
-- TensorFlow (CPU or GPU) ≥ 2.19
+- Python 3.11 (other versions of Python might work, but must be compatible with TensorFlow version)
+- TensorFlow ≥2.19
 - GeoPandas / Rasterio stack
 - NAIP imagery aligned with crown polygons
   - Same CRS
