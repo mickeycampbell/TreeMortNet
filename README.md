@@ -48,6 +48,10 @@ The function returns a GeoDataFrame equivalent to the input, but with two new fi
 ## Notes
 - Input crown polygons must be in the same CRS as the NAIP image
 - Crown polygons must overlap the NAIP data
+- By default, this package is designed to work with `tensorflow-cpu`, as defined in the `requirements.txt`. This was
+chosen to enhance broad applicability, given the complexities of GPU-CUDA-TensorFlow versions; however, you can leverage
+GPU acceleration if you have GPU-enabled `tensorflow >= 2.19` installed. It is worth noting that, even with CPU, 
+predictions are made for several thousand tree crowns within minutes.
 
 ## Citation
 If you use this tool, please cite:
