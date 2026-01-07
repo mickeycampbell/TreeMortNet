@@ -1,6 +1,6 @@
 # TreeMortNet
 
-TreeMortNet is a Python package for predicting **individual tree mortality** from high-resolution, four-band (RGB + NIR)
+*TreeMortNet* is a Python package for predicting **individual tree mortality** from high-resolution, four-band (RGB + NIR)
 NAIP imagery using polygons representing tree crowns, perhaps delineated using airborne lidar.
 
 The package wraps a pre-trained TensorFlow model and provides a simple, file-based prediction interface.
