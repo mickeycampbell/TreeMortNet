@@ -5,8 +5,6 @@ NAIP imagery using polygons representing tree crowns, perhaps delineated using a
 
 The package wraps a pre-trained TensorFlow model and provides a simple, file-based prediction interface.
 
----
-
 ## Requirements
 
 - Python ≥ 3.11
@@ -15,10 +13,7 @@ The package wraps a pre-trained TensorFlow model and provides a simple, file-bas
 - NAIP imagery aligned with crown polygons
   - Same CRS
 
-
 GPU acceleration is **optional**. CPU-only inference works well for thousands of tree crowns.
-
----
 
 ## Installation
 
@@ -29,8 +24,6 @@ git clone https://github.com/mickeycampbell/TreeMortNet.git
 cd TreeMortNet
 pip install -e .
 ```
-
----
 
 ## Example Usage
 
@@ -52,13 +45,9 @@ The function returns a GeoDataFrame equivalent to the input, but with two new fi
 - `prob_dead`: The predicted probability that a given tree crown is dead
 - `pred_dead`: A binary representation of live (0) or dead (1), based on a `prob_dead` ≥ 0.5 threshold
 
----
-
 ## Notes
 - Input crown polygons must be in the same CRS as the NAIP image
 - Crown polygons must overlap the NAIP data
-
----
 
 ## Citation
 If you use this tool, please cite:
